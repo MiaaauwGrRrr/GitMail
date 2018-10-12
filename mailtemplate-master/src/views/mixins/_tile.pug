@@ -1,0 +1,15 @@
+mixin tile(data)
+    a(href=data.link target="_blank").tileLink
+        img.topImage(src=`assets/img/${data.image}.jpg`)
+        wrapper.tile
+            center
+                img(src=`assets/img/${data.discount}.png`)
+                p.centerText= data.categorie1
+                    br
+                    strong= " "+data.categorie2
+                            a(href=link)
+                a(href=data.link target="_blank").buttonLink
+                    wrapper.btn.pink
+                        p.centerText= data.cta
+                            span#arrow
+                                img(src="assets/img/button-arrow.png", alt="arrow")

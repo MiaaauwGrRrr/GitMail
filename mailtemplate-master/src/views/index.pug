@@ -1,0 +1,64 @@
+extends ./layouts/_layout.pug
+include mixins/_tile
+include mixins/_legals
+
+block content
+    row
+        columns(small="12")
+            center
+                a(href="https://www.collishop.be/e/nl/cs/kolossale-kortingen" target="_blank")
+                    img(src="assets/img/....jpg")
+    row
+        columns(small="6" large="6")
+            +tile({
+                image: "",
+                discount: "",
+                categorie1: "",
+                categorie2: "",
+                cta: "",
+                link: ""
+            })
+        columns(small="6" large="6")
+            +tile({
+                image: "",
+                discount: "",
+                categorie1: "",
+                categorie2: "",
+                cta: "",
+                link: ""
+            })
+    row
+        columns(small="12" large="4")
+            +tile({
+                image: "",
+                discount: "",
+                categorie1: "",
+                categorie2: "",
+                cta: "",
+                link: ""
+            })
+        columns(small="12" large="4")
+            +tile({
+                image: "",
+                discount: "",
+                categorie1: "",
+                categorie2: "",
+                cta: "",
+                link: ""
+            })
+        columns(small="12" large="4")
+            +tile({
+                image: "",
+                discount: "",
+                categorie1: "",
+                categorie2: "",
+                cta: "",
+                link: ""
+            })
+    row
+        a(href="#" target="_blank")
+            img(src="assets/img/weekdeal-nl.jpg")
+    +legals(
+       ["Weekdeal geldig van ... t.e.m. ..., zolang de voorraad strekt.", "Voor alle voorwaarden, ga naar collishop.be."]
+    )
+
