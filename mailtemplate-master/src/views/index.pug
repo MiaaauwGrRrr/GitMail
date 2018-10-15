@@ -1,35 +1,31 @@
 extends ./layouts/_layout.pug
 include mixins/_tile
+include mixins/_tile-J-test
 include mixins/_legals
 
 block content
     row
-        columns(small="12")
-            center
-                a(href="https://www.collishop.be/e/nl/cs/kolossale-kortingen" target="_blank")
-                    img(src="assets/img/....jpg")
-    row
         columns(small="6" large="6")
             +tile({
-                image: "",
+                image: "vuilnisbakken",
                 discount: "",
-                categorie1: "",
+                categorie1: "Test met veel whauw",
                 categorie2: "",
-                cta: "",
+                cta: "wow",
                 link: ""
             })
         columns(small="6" large="6")
             +tile({
-                image: "",
+                image: "opbergen",
                 discount: "",
-                categorie1: "",
+                categorie1: "Much wow much cool",
                 categorie2: "",
-                cta: "",
+                cta: "Doge",
                 link: ""
             })
     row
+        h4.centerText test
         columns(small="12" large="4")
-            h4 test
             +tile({
                 image: "",
                 discount: "",
@@ -58,8 +54,28 @@ block content
             })
     row
         columns(small="12" large="12")
+            h4.centerText test
             a(href="#" target="_blank")
              img(src="assets/img/mail/weekdeal-nl.jpg")
+    row
+        columns(small="6" large="6")
+            +tile-J-test({
+                image: "vuilnisbakken",
+                discount: "",
+                categorie1: "Test met veel whauw",
+                categorie2: "",
+                cta: "wow",
+                link: ""
+            })
+        columns(small="6" large="6")
+            +tile-J-test({
+                image: "opbergen",
+                discount: "",
+                categorie1: "Much wow much cool",
+                categorie2: "",
+                cta: "Doge",
+                link: ""
+            })
     +legals(
        ["Weekdeal geldig van ... t.e.m. ..., zolang de voorraad strekt.", "Voor alle voorwaarden, ga naar collishop.be."]
     )
