@@ -8,10 +8,13 @@
     
 .header
     .wrapper-inner
+        width: 580px
         background-color: $collishop-blue
         align-items: top
+        .first
+            padding: 0
         img
-            padding: 10px 20px 0px 20px
+            padding: 10px 20px 0px 0px
             width: 25%
             display: inline-block
             height: auto
@@ -22,16 +25,20 @@
             padding-bottom: 0
         .social
             img 
-                width: 20%
-                padding: 9px 10px 0px 0px
+                width: 55%
+                padding: 10px 20px 0px 25px
                 @media screen and (max-width: 576px)
                     width: 17% !important
                     padding: 10px 0px 0px 17px
+    .inside
+        width: 580px
 
 
 .menu table
     margin: auto
 table.menu
+    margin: auto
+    background: white
     th.menu-item
         cursor: pointer
         padding: 2px 5px 2px 5px
