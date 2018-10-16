@@ -9,9 +9,10 @@ html
         table.body
             tr
                 td
+                    block header
+                        include ./_header.pug
+                        include ./nav.pug
                     container
-                        block header
-                            include ./_header.pug
 
                         block content
 

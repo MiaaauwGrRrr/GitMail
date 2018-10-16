@@ -1,47 +1,65 @@
 .top
-    margin-top: 5px
+    margin-top: 7px
     .preview
         font-size: 12px
         margin: 0 0 4px 0
     .bekijk
-        font-size: 11px
+        font-size: 10px
     
 .header
     .wrapper-inner
         background-color: $collishop-blue
         align-items: top
         img
-            padding: 10px 20px 0px 20px
-            width: 25%
+            padding: 10px 20px 0px 0
+            width: 30%
             display: inline-block
             height: auto
             @media screen and (max-width: 576px)
-                width: 55% !important
+                width: 50% !important
                 padding: 10px 0 0 0
         .columns
             padding-bottom: 0
         .social
             img 
-                width: 20%
-                padding: 9px 10px 0px 0px
+                width: 100%
+                padding: 15px 0 0 0
                 @media screen and (max-width: 576px)
-                    width: 17% !important
-                    padding: 10px 0px 0px 17px
+                    width: 100% !important
+                    padding: 16px 0px 0px 0px
+    .inside
+        width: 580px
+        @media screen and (max-width: 576px)
+            width: 100%
+        .first
+            padding-left: 0
+        .last
+            padding-right: 0
+
 
 
 .menu table
     margin: auto
 table.menu
+    margin: auto
+    background-color: white
     th.menu-item
         cursor: pointer
         padding: 2px 5px 2px 5px
         @media screen and (max-width: 576px)
-            width: auto !important
         a
             color: $collishop-blue
-            font-size: 11px
+            font-size: 13px
         &:hover a
             color: $dark-blue
+.wrapper
+    table.menu
+        margin: auto
+        th.menu-item .last
+            @media screen and (max-width: 576px)
+                text-align: center
+                width: 50% !important
+                    padding: 0  !important
 
 
 
