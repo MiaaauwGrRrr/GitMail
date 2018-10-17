@@ -14,8 +14,10 @@ html
                     container
                         include ./nav.pug                        
                         block content
-                        include ./nav.pug
+                        //-include ./nav.pug
                         include ./first-footer.pug 
                         block footer
-                            include ./_footer.pug
+                            
+                    block header
+                        include ./_footer.pug
 
