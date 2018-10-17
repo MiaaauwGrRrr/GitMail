@@ -41,27 +41,13 @@
 .menu table
     margin: auto
 table.menu
-    margin: auto
-    background-color: white
     th.menu-item
         cursor: pointer
         padding: 2px 5px 2px 5px
         @media screen and (max-width: 576px)
-            a
-                color: $collishop-blue
-                font-size: 13px
-            &:hover a
-                color: $dark-blue
-.wrapper
-    table.menu
-        margin: auto
-        th.menu-item .last
-            @media screen and (max-width: 576px)
-                text-align: center
-                width: 50% !important
-                    padding: 0  !important
-
-
-
-
-
+            width: auto !important
+        a
+            color: $collishop-blue
+            font-size: 11px
+        &:hover a
+            color: $dark-blue
