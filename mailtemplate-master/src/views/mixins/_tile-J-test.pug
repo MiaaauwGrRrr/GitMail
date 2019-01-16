@@ -4,12 +4,8 @@ mixin tile-J-test(data)
         wrapper.tile
             center
                 span.spacer
-                p.centerText= data.categorie1
+                p= data.categorie1
                     br
                     strong= " "+data.categorie2
-
-
                 wrapper.btn.blue
                         p.centerText= data.cta
-                            span#arrow
-                                img(src="assets/img/button-arrow.png", alt="arrow")
