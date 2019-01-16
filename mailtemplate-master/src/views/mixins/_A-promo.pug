@@ -1,0 +1,9 @@
+mixin a-promo(data)
+    a(href=data.link target="_blank").tileLink
+        img.topImage(src=`assets/img/mail/${data.image}.jpg`)
+        wrapper.tile
+            center
+                span.spacer
+                p= data.categorie1
+                wrapper.btn.red.button.float-left
+                        p.centerText= data.cta

@@ -1,9 +1,12 @@
 extends ./layouts/_layout.pug
 include mixins/_c-promo
 include mixins/_c-info
+include mixins/_A-info
+include mixins/_A-promo
 include mixins/_legals
 
 block content
+    hr
     row
         columns(small="12" large="12")
             h5.centerText Lorem ipsumanitoioooo
@@ -29,12 +32,11 @@ block content
                 cta: "Doge",
                 link: ""
             })
-    hr 
+    hr
     row
         columns(small="6" large="6")
             +c-info({
-                image: "vuilnisbakken",
-                discount: "tot-10",
+                image: "blok1-info",
                 categorie1: "Test met veel whauw",
                 categorie2: "",
                 cta: "wow",
@@ -42,11 +44,28 @@ block content
             })
         columns(small="6" large="6")
             +c-info({
-                image: "opbergen",
-                discount: "tot-10",
+                image: "blok2-info",
                 categorie1: "Much wow much cool",
                 categorie2: "",
                 cta: "Doge",
+                link: ""
+            })
+    hr
+    row
+        columns(small="12" large="12")
+            +a-info({
+                image: "a-info",
+                categorie1: "Dit is een tekstje",
+                cta: "wow dit is een cta",
+                link: ""
+            })
+    hr
+    row
+        columns(small="12" large="12")
+            +a-promo({
+                image: "a-promo2",
+                categorie1: "Dit is een tekstje",
+                cta: "wow dit is een cta",
                 link: ""
             })
     hr            
