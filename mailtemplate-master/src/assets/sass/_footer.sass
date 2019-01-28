@@ -35,18 +35,30 @@
     p 
         margin-bottom: 0
         font-size: 13px
-    .inline *
-        display: inline
-        img
+    .inline th *
+        display: inline-block
+    .inline th img
             margin-right: 5px
-            width: 7%
+            width: 1.3em !important
+.phone
+    float: right
 .phone h6 
-    float: right
-.phone div
-    float: right
-.first-footer .phone img
-    width: 60%
-    margin: 0
+    text-align: right
 
+.first-footer .phone img
+    //margin: 0
+
+.info 
+    th *
+        display: inline-block
+        text-align: center
+    img
+        width: 1.7em
+        margin-right: 7px
+    img.truck
+        width: 2.3em
+.hide
+    @media screen and (max-width: 576px)
+        display: none !important
 
         
