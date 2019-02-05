@@ -3,6 +3,7 @@ include mixins/_c-promo
 include mixins/_c-info
 include mixins/_A-info
 include mixins/_A-promo
+include mixins/_promo-prijs
 include mixins/_legals
 
 block content
@@ -18,7 +19,7 @@ block content
             +c-promo({
                 image: "vuilnisbakken",
                 discount: "tot-10",
-                categorie1: "Op alle",
+                categorie1: "op ALLE",
                 categorie2: "vuilnisbakken",
                 cta: "wow",
                 link: ""
@@ -68,7 +69,33 @@ block content
                 cta: "wow dit is een cta",
                 link: ""
             })
-    hr            
+    hr
+    row
+        columns(small="12" large="6")
+            +promo-prijs({
+                image: "blok1-info",
+                categorie1: "Test met veel whauw",
+                categorie2: "",
+                cta: "wow",
+                link: ""
+            })
+        columns(small="6" large="3")
+            +promo-prijs({
+                image: "small1",
+                categorie1: "Much wow much",
+                categorie2: "",
+                cta: "Doge",
+                link: ""
+            })
+        columns(small="6" large="3")
+            +promo-prijs({
+                image: "small2",
+                categorie1: "Much wow much",
+                categorie2: "",
+                cta: "Doge",
+                link: ""
+            })
+    hr           
     +legals(
        ["Weekdeal geldig van git-push-test t.e.m. ..., zolang de voorraad strekt.", "Voor alle voorwaarden, ga naar collishop.be."]
     )

@@ -1,0 +1,11 @@
+mixin promo-prijs(data)
+    a(href=data.link target="_blank").tileLink
+        img.topImage(src=`assets/img/mail/${data.image}.jpg`)
+        wrapper.tile
+                p= data.categorie1
+                    br
+                    strong= " "+data.categorie2
+                            a(href=link)
+                a(href=data.link target="_blank").buttonLink
+                    wrapper.btn.red
+                        p.centerText= data.cta
