@@ -5,7 +5,4 @@ mixin promo-prijs(data)
                 p= data.categorie1
                     br
                     strong= " "+data.categorie2
-                            a(href=link)
-                a(href=data.link target="_blank").buttonLink
-                    wrapper.btn.red
-                        p.centerText= data.cta
+                button.red= data.cta
