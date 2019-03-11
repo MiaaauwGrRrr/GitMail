@@ -7,13 +7,11 @@ include mixins/_promo-prijs
 include mixins/_legals
 
 block content
-   spacer.line
     row
         columns(small="12" large="12")
             h5.centerText Lorem ipsumanitoioooo
             a(href="#" target="_blank")
-                img(src="assets/img/mail/Artboard.jpg")
-   spacer.line                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                img(src="assets/img/mail/Artboard.jpg")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     row
         columns(small="6" large="6")
             +c-promo({
@@ -33,7 +31,6 @@ block content
                 cta: "Doge",
                 link: ""
             })
-   spacer.line
     row
         columns(small="6" large="6")
             +c-info({
@@ -51,7 +48,6 @@ block content
                 cta: "Doge",
                 link: ""
             })
-   spacer.line
     row
         columns(small="12" large="12")
             +a-info({
@@ -60,7 +56,6 @@ block content
                 cta: "wow dit is een cta",
                 link: ""
             })
-   spacer.line
     row
         columns(small="12" large="12")
             +a-promo({
@@ -69,33 +64,6 @@ block content
                 cta: "wow dit is een cta",
                 link: ""
             })
-   spacer.line
-    //row
-    //    columns(small="12" large="6")
-    //        +promo-prijs({
-    //            image: "blok1-info",
-    //            categorie1: "Test met veel whauw",
-    //            categorie2: "",
-    //            cta: "wow",
-    //            link: ""
-    //        })
-    //    columns(small="6" large="3")
-    //        +promo-prijs({
-    //            image: "small1",
-    //            categorie1: "Much wow much",
-    //            categorie2: "",
-    //            cta: "Doge",
-    //            link: ""
-    //        })
-    //    columns(small="6" large="3")
-    //        +promo-prijs({
-    //            image: "small2",
-    //            categorie1: "Much wow much",
-    //            categorie2: "",
-    //            cta: "Doge",
-    //            link: ""
-    //        })
-    //spacer.line
     row
         columns(small="6" large="3")
             +c-info({
@@ -128,8 +96,7 @@ block content
                 categorie2: "",
                 cta: "Doge",
                 link: ""
-            })
-   spacer.line           
+            })           
     +legals(
        ["Weekdeal geldig van git-push-test t.e.m. ..., zolang de voorraad strekt.", "Voor alle voorwaarden, ga naar collishop.be."]
     )
