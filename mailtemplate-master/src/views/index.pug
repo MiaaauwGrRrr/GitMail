@@ -7,18 +7,18 @@ include mixins/_promo-prijs
 include mixins/_legals
 
 block content
-    row
+    row.line
         columns(small="12" large="12")
             center    
                 h5.centerText Lorem ipsumanitoioooo
                 a(href="#" target="_blank")
                     img(src="assets/img/mail/Artboard.jpg")       
-    row
+    row.line
         columns(small="12" large="12")
             h5.centerText Lorem ipsumanitoioooo
             a(href="#" target="_blank")
                 img(src="assets/img/mail/testio.jpg")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-    row
+    row.line
         columns(small="6" large="6")
             +c-promo({
                 image: "vuilnisbakken",
@@ -37,7 +37,7 @@ block content
                 cta: "Doge",
                 link: ""
             })
-    row
+    row.line
         columns(small="6" large="6")
             +c-info({
                 image: "blok1-info",
@@ -54,7 +54,7 @@ block content
                 cta: "Doge",
                 link: ""
             })
-    row
+    row.line
         columns(small="12" large="12")
             +a-info({
                 image: "a-info",
@@ -62,7 +62,7 @@ block content
                 cta: "wow dit is een cta",
                 link: ""
             })
-    row
+    row.line
         columns(small="12" large="12")
             +a-promo({
                 image: "a-promo2",
@@ -70,7 +70,7 @@ block content
                 cta: "wow dit is een cta",
                 link: ""
             })
-    row
+    row.line
         columns(small="6" large="3")
             +c-info({
                 image: "small-1",

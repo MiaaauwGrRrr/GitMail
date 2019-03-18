@@ -22,6 +22,8 @@ a:hover
 .legal
     margin: 0
     font-size: 15px
+    @media only screen and (max-width: 596px)
+        font-size: 18px
 .spacer
     height: 1em
     display: block
@@ -56,17 +58,27 @@ table
     border-collapse: separate
     a, a:link, a:visited 
       text-decoration: none 
-      color: #00788a 
     a:hover 
       text-decoration: underline
     h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht 
       color:#000!important
     .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td 
       line-height: 100%
-    .row, .menu
+    .line
         border-bottom: solid 1px #cecece
         margin-top: 15px
-    .info
+    .menu
         border-bottom: solid 1px #cecece
-        border-top: solid 1px #cecece
-        margin-top: 15px
+        margin-bottom: 15px
+.first-footer
+    border-top: solid 1px #cecece
+    h6
+        margin-top: 7px
+        margin-bottom: 7px
+        margin-left: 15px
+        font-size: 15px
+        @media only screen and (max-width: 596px)
+            font-size: 22px
+.usp-line
+    border-top: solid 1px #cecece
+    padding-top: 10px !important
