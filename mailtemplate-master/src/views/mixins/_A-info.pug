@@ -1,6 +1,6 @@
 mixin a-info(data)
     a(href=data.link target="_blank").tileLink
-        img.topImage(src=`assets/img/mail/${data.image}.jpg`)
+        img.topImage(src=`assets/img/mail/${data.image}.jpg` name=`${data.image}`)
         wrapper.tile
             center
                 span.spacer
