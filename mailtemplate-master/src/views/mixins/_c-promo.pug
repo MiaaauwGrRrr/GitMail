@@ -3,9 +3,9 @@ mixin c-promo(data)
         img.topImage(src=`assets/img/mail/${data.image}.jpg`)
         wrapper.tile
             center
-                img(src=`assets/img/prct/${data.discount}.png`)
+                img.imgPrct(src=`assets/img/prct/${data.discount}.png`)
                 p.centerText= data.categorie1
                 p.centerText= data.categorie2
                     br
                 wrapper.btn.red
-                    p.centerText= data.cta
+                    p.centerText= data.cta + " ›"
