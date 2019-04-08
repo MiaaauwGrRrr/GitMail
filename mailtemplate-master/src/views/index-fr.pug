@@ -1,10 +1,10 @@
-extends ./layouts/NL/_layout.pug
+extends ./layouts/FR/_layout-fr.pug
 include mixins/_c-promo
 include mixins/_c-info
 include mixins/_A-info
 include mixins/_A-promo
 include mixins/_promo-prijs
-include mixins/_legals
+include mixins/_legalsfr
 
 block content
     row.line
@@ -97,7 +97,7 @@ block content
                 cta: "Doge",
                 link: ""
             })           
-    +legals(
+    +legalsfr(
        ["Weekdeal geldig van git-push-test t.e.m. ..., zolang de voorraad strekt.", "test"]
     )
 

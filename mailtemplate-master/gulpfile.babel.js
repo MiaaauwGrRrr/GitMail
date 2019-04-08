@@ -37,7 +37,18 @@ function pages() {
     .pipe(inky())
     .pipe(gulp.dest("dist"));
 }
-
+function pages2() {
+  return gulp
+    .src(["src/views/index-fr.pug"])
+    .pipe(pug({}))
+    .pipe(
+      rename({
+        extname: ".html"
+      })
+    )
+    .pipe(inky())
+    .pipe(gulp.dest("dist"));
+}
 // Sass → CSS
 function sass() {
   return gulp
@@ -172,7 +183,7 @@ function zip() {
 }
 
 // Build the "dist" folder by running all of the below tasks
-gulp.task("build", gulp.series(clean, pages, sass, images, inline));
+gulp.task("build", gulp.series(clean, pages, pages2, sass, images, inline));
 
 // Build emails, run the server, and watch for file changes
 gulp.task("default", gulp.series("build", server, watch));

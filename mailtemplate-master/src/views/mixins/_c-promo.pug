@@ -1,5 +1,5 @@
 mixin c-promo(data)
-    a(href=data.link target="_blank").tileLink
+    a(href=data.link target="_blank" xt="SPCLICKSTREAM" name=data.link).tileLink
         img.topImage(src=`assets/img/mail/${data.image}.jpg`)
         wrapper.tile
             center
